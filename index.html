@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rick Listrado</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
         <link rel="stylesheet" href="node_modules/lib/styles.css" />
         <link rel="stylesheet" href="node_modules/lib/carousels.css" />
         
@@ -131,7 +131,7 @@
                                 <br><br>
                                 Também sou acadêmico de Design no<br>
                                 Centro de  Ensino Superior do Amapá.</p>
-                            <!-- "checa meu curriculo" button -->
+                            <!-- <button onclick="downloadCV()">checa meu curriculo!</button> -->
                         </div>
                         <div class="col-lg-5 custom-col-lg-5 d-flex justify-content-center p-0">
                             <img class="rick-jumping" src="Portfolio/eu pulando 5k.png">
@@ -148,16 +148,22 @@
                             <img class="title-transform" src="Portfolio/CONTATO.png">
                         </div>
                     </div>
-                    <div class="row row-cols-2 d-flex justify-content-center contato-bg">
-                        <div class="col d-flex justify-content-center">
-                            <p>contato</p>
+                    <div class="row row-cols-2 d-flex justify-content-center">
+                        <div class="col">
+                            <p><i class="far fa-envelope"></i> ricklistrado@gmail.com
+                                <br>
+                                <i class="fab fa-whatsapp"></i> (96) 99171-0177
+                            </p>
+                        </div>
+                        <div class="col" id="">
+                            <!-- <form method="POST"> -->
+                                <textarea placeholder="Digite uma mensagem..." rows="3"></textarea>
+                                <input placeholder="Digite seu email..." type="email"/>
+                                <button type="submit">enviar</button>
+                            <!-- </form> -->
                         </div>
                         <div class="col d-flex justify-content-center">
-                            <!-- input
-                            < input button > -->
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                            <p>&copy; 2021 por Luiz Henrique</p>
+                            <a href="">&copy; 2021 por Luiz Henrique</a>
                         </div>
                     </div>
                 </section>
