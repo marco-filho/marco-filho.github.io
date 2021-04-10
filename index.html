@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <div class="row d-flex justify-content-center">
-                        <div class="col d-flex justify-content-end p-0">
+                        <div class="col p-0">
                             <p class="description">Meu nome é Luiz Henrique, também<br>
                                 conhecido como Rick Listrado.
                                 <br><br>
@@ -130,8 +130,11 @@
                                 músico e  artista :)
                                 <br><br>
                                 Também sou acadêmico de Design no<br>
-                                Centro de  Ensino Superior do Amapá.</p>
-                            <!-- <button onclick="downloadCV()">checa meu curriculo!</button> -->
+                                Centro de  Ensino Superior do Amapá.
+                            </p>
+                            <a href="LuizHenriqueCV.pdf" download>
+                                <img src="Portfolio/CHECA MEU CURRÍCULO!.png" alt="checa meu currículo!">
+                            </a>
                         </div>
                         <div class="col-lg-5 custom-col-lg-5 d-flex justify-content-center p-0">
                             <img class="rick-jumping" src="Portfolio/eu pulando 5k.png">
@@ -144,22 +147,23 @@
             <div class="container-fluid">
                 <section id="contato">
                     <div class="row d-flex justify-content-center">
-                        <div id="contato-title" class="col-xl-4 col-lg-5 col-md-6 col-7 col-title">
+                        <div id="contato-title" class="col-xl-4 col-lg-5 col-md-5 col-6 col-title">
                             <img class="title-transform" src="Portfolio/CONTATO.png">
                         </div>
                     </div>
                     <div class="row row-cols-2 d-flex justify-content-center">
                         <div class="col">
-                            <p><i class="far fa-envelope"></i> ricklistrado@gmail.com
+                            <p>
+                                <img class="icons" src="email_icon.svg"> ricklistrado@gmail.com
                                 <br>
-                                <i class="fab fa-whatsapp"></i> (96) 99171-0177
+                                <img class="icons" src="wpp_icon.svg"> (96) 99171-0177
                             </p>
                         </div>
-                        <div class="col" id="">
+                        <div class="col">
                             <!-- <form method="POST"> -->
                                 <textarea placeholder="Digite uma mensagem..." rows="3"></textarea>
                                 <input placeholder="Digite seu email..." type="email"/>
-                                <button type="submit">enviar</button>
+                                <button onclick="openMail()" type="submit"><img src="Portfolio/ENVIAR.png" alt="enviar"></button>
                             <!-- </form> -->
                         </div>
                         <div class="col d-flex justify-content-center">
