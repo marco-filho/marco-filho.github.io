@@ -10,12 +10,14 @@
         <link rel="shortcut icon" href="imports/webp/favicon.webp" />
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="node_modules/lib/site.js"></script>
+        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="node_modules/lib/main.js"></script>
     </head>
 
     <body class="background">
         <main>
+            <!-- <div id="test"></div> -->
             <div class="container-fluid mt-5">
                 <section id="header">
                     <div class="row">
@@ -60,12 +62,13 @@
                                     <li data-target="#audiovisual-media-container" data-slide-to="12"></li>
                                 </ul>
     
-                                <div class="carousel-inner">
-                                    <div class="carousel-item audiovisual active">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/0AwqcaaU85g"></iframe>
+                                <div class="carousel-inner" id="test">
+                                    <!-- <div class="carousel-item audiovisual active">
+                                        <div id="player"></div>
+                                        <iframe class="border-0" src="https://www.youtube.com/embed/0AwqcaaU85g?enablejsapi=1"></iframe>
                                     </div>
                                     <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/ZnoLfCiyhRw"></iframe>
+                                        <iframe class="border-0" src="https://www.youtube.com/embed/ZnoLfCiyhRw?enablejsapi=1"></iframe>
                                     </div>
                                     <div class="carousel-item audiovisual">
                                         <iframe class="border-0" src="https://www.youtube.com/embed/UTnYtdV-XCM"></iframe>
@@ -99,13 +102,13 @@
                                     </div>
                                     <div class="carousel-item audiovisual">
                                         <iframe class="border-0" src="https://www.youtube.com/embed/7fkv2bNfqN4"></iframe>
-                                    </div>
+                                    </div> -->
                                 </div>
     
-                                <a class="carousel-control-prev" href="#audiovisual-media-container" data-slide="prev">
+                                <a class="carousel-control-prev carousel-control" href="#audiovisual-media-container" data-slide="prev">
                                     <span class="carousel-control-prev-icon"></span>
                                 </a>
-                                <a class="carousel-control-next" href="#audiovisual-media-container" data-slide="next">
+                                <a class="carousel-control-next carousel-control" href="#audiovisual-media-container" data-slide="next">
                                     <span class="carousel-control-next-icon"></span>
                                 </a>
                             </div>
@@ -261,7 +264,7 @@
                         </div>
                         <div class="col">
                             <!-- <form method="POST"> -->
-                                <textarea id="body" placeholder="Digite uma mensagem..." rows="3"></textarea>
+                                <textarea id="body" placeholder="Digite uma mensagem..." rows="4"></textarea>
                                 <input id="contact" placeholder="Digite seu email..." type="email"/>
                                 <button onclick="openMail()" type="submit">
                                     <img src="imports/webp/ENVIAR.webp" alt="enviar">
