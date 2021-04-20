@@ -10,22 +10,22 @@
         <link rel="shortcut icon" href="imports/webp/favicon.webp" />
         
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
-        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="node_modules/lib/main.js"></script>
     </head>
 
-    <body class="background">
+    <body onload="resizeBg()">
         <main>
-            <!-- <div id="test"></div> -->
-            <div class="container-fluid mt-5">
+            <div class="background"></div>
+            <div class="texture"></div>
+            <div class="container-fluid">
                 <section id="header">
                     <div class="row">
                         <div class="col">
                             <div class="col row d-flex justify-content-center m-0 p-0">
                                 <h1 class="title-1">rick listrado</h1>
                             </div>
-                            <div class="col row d-flex justify-content-end m-0 p-0">
+                            <div class="col row d-flex justify-content-lg-end justify-content-center m-0 p-0">
                                 <h2 class="title-2">e esse é meu portfólio :)</h2>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col col-md-9 col-lg-8 col-xl-7 d-flex justify-content-center">
                             <div id="audiovisual-media-container" class="media-container carousel slide" data-ride="carousel">
-                                <ul class="carousel-indicators">
+                                <ul class="carousel-indicators" id="indicators">
                                     <li data-target="#audiovisual-media-container" data-slide-to="0" class="active"></li>
                                     <li data-target="#audiovisual-media-container" data-slide-to="1"></li>
                                     <li data-target="#audiovisual-media-container" data-slide-to="2"></li>
@@ -62,48 +62,7 @@
                                     <li data-target="#audiovisual-media-container" data-slide-to="12"></li>
                                 </ul>
     
-                                <div class="carousel-inner" id="test">
-                                    <!-- <div class="carousel-item audiovisual active">
-                                        <div id="player"></div>
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/0AwqcaaU85g?enablejsapi=1"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/ZnoLfCiyhRw?enablejsapi=1"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/UTnYtdV-XCM"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/tAMpQ3t0UXU"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/UHrLhieoFvE"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/NsjG3CSArFs"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/u3_QCCNKy9E"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/1QN-TIhG-rE"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/qTbloWX3XYE"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/baovTvStLWc"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/Le48TjIvWe4"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/D_1q5ITuBAc"></iframe>
-                                    </div>
-                                    <div class="carousel-item audiovisual">
-                                        <iframe class="border-0" src="https://www.youtube.com/embed/7fkv2bNfqN4"></iframe>
-                                    </div> -->
-                                </div>
+                                <div class="carousel-inner" id="ytembed"></div>
     
                                 <a class="carousel-control-prev carousel-control" href="#audiovisual-media-container" data-slide="prev">
                                     <span class="carousel-control-prev-icon"></span>
@@ -254,15 +213,15 @@
                             <img class="title-transform" src="imports/webp/CONTATO.webp">
                         </div>
                     </div>
-                    <div class="row row-cols-2 d-flex justify-content-center">
-                        <div class="col">
+                    <div class="row row-cols-lg-2 row-cols-1 d-flex justify-content-center">
+                        <div class="col d-flex justify-content-center justify-content-lg-start my-lg-0 my-3">
                             <p>
                                 <img class="icons" src="email_icon.svg"> ricklistrado@gmail.com
                                 <br>
                                 <img class="icons" src="wpp_icon.svg"> (96) 99171-0177
                             </p>
                         </div>
-                        <div class="col">
+                        <div class="col" id="email">
                             <!-- <form method="POST"> -->
                                 <textarea id="body" placeholder="Digite uma mensagem..." rows="4"></textarea>
                                 <input id="contact" placeholder="Digite seu email..." type="email"/>
